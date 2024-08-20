@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[3]:
 
 
 import pandas as pd
@@ -12,9 +9,6 @@ from sklearn.preprocessing import StandardScaler, OneHotEncoder
 
 file_path = r"C:\Project@GAVATAR\Energy_consumption.csv"
 data = pd.read_csv(file_path)
-
-
-# In[5]:
 
 
 ######## Step 2: Data Preprocessing
@@ -57,8 +51,6 @@ print(X_train.shape, X_test.shape, y_train.shape, y_test.shape)
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-# In[9]:
 
 
 # Step 3: Data Analysis
@@ -128,9 +120,6 @@ import xgboost as xgb
 from sklearn.metrics import mean_squared_error, r2_score
 
 
-# In[10]:
-
-
 # Step 4: Model Creation
 
 
@@ -188,7 +177,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import mean_absolute_error, r2_score
 
 
-# In[11]:
+
 
 
 # Step 5: Model Validation
@@ -231,8 +220,6 @@ print(f"Best Model - Mean Absolute Error (MAE): {best_mae}")
 print(f"Best Model - R-squared (R2): {best_r2}")
 
 
-# In[12]:
-
 
 # Step 6: Prediction
 
@@ -240,10 +227,5 @@ print(f"Best Model - R-squared (R2): {best_r2}")
 print("Step 6: Prediction")
 for i in range(10):
     print(f"Predicted: {y_best_pred[i]}, Actual: {y_test.iloc[i]}")
-
-
-# In[ ]:
-
-
 
 
